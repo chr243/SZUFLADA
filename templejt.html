@@ -1,0 +1,42 @@
+﻿<head><meta charset='utf-8'></head>
+
+<center>SZUFLADA VER. BETAWCHUJ 0.1
+<table width=800 height=12 bgcolor=lightblue><tr><td width=50%>
+
+<center><a href="./">index</a></center></td><td width=50%>
+<center><a href="./add">dodaj wpis</a></center>
+
+</td></tr></table><br><br>
+
+
+%for id, wiersz in db:
+
+
+<table border=0 width=400 bgcolor=lightblue height=200>
+<tr><td align=center>
+<table border=0 width=400><tr><td width=50%>
+<a href='./pokaz/{{id}}'>
+{{id}}
+</a>
+</td>
+<td width=50% align=right>
+
+<a href='/usun/{{id}}'>usun to</a>
+
+</td></tr></table>
+<table border=0 width=200 height=150 bgcolor=white>
+<tr><td align=center valign=top>
+
+{{wiersz}}
+
+</td></tr></table>
+</td></tr>
+</table><br>
+<table width=500 height=8 bgcolor=lightblue><tr><td></tr></td></table>
+<br>
+
+%end
+
+<BR><BR>
+<table width=800 height=12 bgcolor=lightblue><tr><td></tr></td></table>
+<table width=800 height=8><tr><td>copyrajt by koziol</tr></td></table>
